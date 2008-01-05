@@ -1,0 +1,37 @@
+#labels Phase-Requirements
+#Organization and guidelines of the Trail API
+
+= The Zen art of the 4 letter conventions =
+
+Trail URLs conventions are based on a pair of action and content separated by an   * underscore, all actions and content types names are four letter english words. For example, the endpoints for the basic CRUD operations regarding blog posts (rants) would look like:
+
+{{{
+/blog/born_rant
+/blog/view_rant
+/blog/edit_rant
+/blog/done_rant
+/blog/kill_rant
+}}}
+
+== Content types / Models ==
+  * user - a user profile representation (for authors and commenteers)
+  * site - a website profile (similar to user but for trackbacks/pingbacks)
+  * rant - a blog post entry
+  * note - a comment on a rant
+  * mark - a label to classify other contents (tag)
+  * icon - an image representing a category
+
+
+== Current 4 letter Actions ==
+  * born
+  * view
+  * done
+  * edit
+  * save
+  * hide
+  * kill
+  * rate
+  * hate
+  * love
+  * list
+  * ping
