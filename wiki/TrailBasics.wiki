@@ -1,7 +1,7 @@
 #labels Phase-Requirements
-#Organization and guidelines of the Trail API
+= Organization and guidelines of the Trail API= 
 
-= The Zen art of the 4 letter conventions =
+== The Zen art of the 4 letter conventions ==
 
 Trail URLs conventions are based on a pair of action and content separated by an   * underscore, all actions and content types names are four letter english words. For example, the endpoints for the basic CRUD operations regarding blog posts (rants) would look like:
 
