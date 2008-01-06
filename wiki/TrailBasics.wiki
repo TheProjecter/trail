@@ -13,7 +13,7 @@ Trail URLs conventions are based on a pair of action and content separated by an
 /blog/kill_rant
 }}}
 
-== Content types / Models ==
+== Current 4 letter Content types / Models ==
   * user - a user profile representation (for authors and commenteers)
   * site - a website profile (similar to user but for trackbacks/pingbacks)
   * rant - a blog post entry
