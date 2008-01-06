@@ -39,10 +39,11 @@ Trail URLs conventions are based on a pair of action and content separated by an
   * send - share the reference for that content with someone else or some other service
 
 == Aliases and URL Rewriting rules ==
-
+{{{
 /blog/[post_title] (view_post)
 /blog/born/[post_title]
 /blog/edit/[post_title]
 /blog/hide/[post_title]
 /blog/kill/[post_title]
 /blog/ping/[post_title]
+}}}
