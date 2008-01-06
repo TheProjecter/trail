@@ -23,15 +23,17 @@ Trail URLs conventions are based on a pair of action and content separated by an
 
 
 == Current 4 letter Actions ==
-  * born
-  * view
-  * done
-  * edit
-  * save
-  * hide
-  * kill
-  * rate
-  * hate
-  * love
-  * list
-  * ping
+  * born - create a content
+  * view - retrieve/display a content
+  * done - publishes a content, make it public acessible
+  * edit - edit/update a content
+  * save - save the state of a draft
+  * hide - unpublish a content or make it private
+  * kill - remove a content
+  * rate - add a rating (0.0-5.0) value to a content
+  * hate - add a -1 vote to a content, aka thumbs down
+  * love - add a +1 vote to a content, aka thumbs up
+  * list - retrieve a collection of contents
+  * ping - ping a content (to denote that a content was referrenced, as in pingbacks/trackbacks)
+  * copy - replicate the content in other site/repository
+  * send - share the reference for that content with someone else or some other service
