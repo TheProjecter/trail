@@ -1,0 +1,48 @@
+# Organization and guidelines of the Trail API #
+
+## The Zen art of the 4 letter conventions ##
+
+Trail URLs conventions are based on a pair of action and content separated by an underscore, all actions and content types names are four letter english words. For example, the endpoints for the basic CRUD operations regarding blog posts (rants) would look like:
+
+```
+/blog/born_rant
+/blog/view_rant
+/blog/edit_rant
+/blog/done_rant
+/blog/kill_rant
+```
+
+## Current 4 letter Content types / Models ##
+  * user - a user profile representation (for authors and commenteers)
+  * site - a website profile (similar to user but for trackbacks/pingbacks)
+  * rant - a blog post entry
+  * note - a comment on a rant
+  * mark - a label to classify other contents (tag)
+  * icon - an image representing a category
+
+
+## Current 4 letter Actions ##
+  * born - create a content
+  * view - retrieve/display a content
+  * done - publishes a content, make it public acessible
+  * edit - edit/update a content
+  * save - save the state of a draft
+  * hide - unpublish a content or make it private
+  * kill - remove a content
+  * rate - add a rating (0.0-5.0) value to a content
+  * hate - add a disapproval vote to a content, aka thumbs down
+  * love - add an approval vote to a content, aka thumbs up
+  * list - retrieve a collection of contents
+  * ping - ping a content (to denote that a content was referrenced, as in pingbacks/trackbacks)
+  * copy - replicate the content in other site/repository
+  * send - share the reference for that content with someone else or some other service
+
+## Aliases and URL Rewriting rules ##
+```
+/blog/[post_title] (view_post)
+/blog/born/[post_title]
+/blog/edit/[post_title]
+/blog/hide/[post_title]
+/blog/kill/[post_title]
+/blog/ping/[post_title]
+```
